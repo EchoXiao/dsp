@@ -19,7 +19,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> - pwd
+  - mkdir
+  - rmdir
+  - touch file1
+  - rm file1
+  - mv file1 file2
+  - ls -a
+  - mv file1-oldpath newpath
+  - cat #short preview of the file
+  - cd #change directory
 
 ---
 
@@ -34,7 +43,7 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls` is the linux command to show current files in the directory. The extra key `-a` stands for `-all`, which will list out all the hidden files. `-l` will display long list of all the information about the files it contains. `-lh` will display long list of informations in human readable formats. Combining all the keys together `-lah` will display all the files within the directory with a long detail list in human readable format. `-t` will display the files from most recently modified to oldest. Lastly, `-Glp` will display colorized output with long list of information for each files, and an extra slash (`/') after each filename if that file is a directory.
 
 ---
 
@@ -42,7 +51,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> - `ls -a`
+  - `ls -l`
+  - `ls -lt`
+  - `ls -c`
+  - `ls -u`
 
 ---
 
@@ -50,7 +63,15 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> Xargs command is designed to construct argument lists and invoke other utility. xargs reads items from the standard input or pipes, delimited by blanks or newlines, and executes the command one or more times with any initial-arguments followed by items read from standard input.
+
+The below command line will find all the files in the current and below directories with extension ending in .java, then it will look for word "Stocks" within each file.
+
+```console
+$ find . -name "*.java" | xargs grep "Stock"`
+```
+
+Read more: http://javarevisited.blogspot.com/2012/06/10-xargs-command-example-in-linux-unix.html#ixzz4kcRX3rai
 
  
 
