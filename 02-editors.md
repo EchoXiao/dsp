@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Nano and Vim are both my choice of editors because I have used them for my past works.
 
 --
 
@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I have Pycharm installed on my Mac, was recommanded by a friend when I was working on my graduate research. It provides colorful syntax for easy formating with embedded VC. One thing that is particular useful for Pycharm is the cmd+"+" and cmd+"-" shortcut key, which allows user to expand or collapse a code fragment in the editor.
 
  
