@@ -55,8 +55,8 @@ Did you install Python 2 or 3? Why?
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
 >> ```console
-$ python -V
-```
+   $ python -V
+   ```
 
  
 
