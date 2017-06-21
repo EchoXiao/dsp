@@ -48,15 +48,15 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> Python 3, because I have been using Python 3 for my past works.
+- Python 3, because I have been using Python 3 for my past works.
 
 ### Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> ```console
+```console
    $ python -V
-   ```
+```
 
  
 
