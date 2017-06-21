@@ -19,16 +19,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> - pwd
-  - mkdir
-  - rmdir
-  - touch file1
-  - rm file1
-  - mv file1 file2
-  - ls -a
-  - mv file1-oldpath newpath
-  - cat #short preview of the file
-  - cd #change directory
+- pwd
+- mkdir
+- rmdir
+- touch file1
+- rm file1
+- mv file1 file2
+- ls -a
+- mv file1-oldpath newpath
+- cat #short preview of the file
+- cd #change directory
 
 ---
 
@@ -51,11 +51,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> - `ls -a`
-  - `ls -l`
-  - `ls -lt`
-  - `ls -c`
-  - `ls -u`
+- `ls -a`
+- `ls -l`
+- `ls -lt`
+- `ls -c`
+- `ls -u`
 
 ---
 
