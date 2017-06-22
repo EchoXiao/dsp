@@ -41,8 +41,42 @@ sorted(['Apple', 'PEACH', 'strawberry', 'banana'], key = lambda word: word.upper
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are very natural and easy way or list manipulation. 
 
+```python
+names = ['Anne', 'Amy', 'Bob', 'David', 'Carrie', 'Barbara', 'Zach']
+lengths = map(len, names)
+print lengths
+[4, 3, 3, 5, 6, 7, 4]
+```
+>> The above python map can be written in a more compact and natural format using list comprehension.
+
+```python
+names = ['Anne', 'Amy', 'Bob', 'David', 'Carrie', 'Barbara', 'Zach']
+print ([len(name) for name in names])
+[4, 3, 3, 5, 6, 7, 4]
+```
+>> Same concept can be applied to `filter()` using list comprehension.
+
+```python
+squares = [x**2 for x in range(15)]
+filtered_squares = [s for s in squares if s > 5 and s < 100]
+print(filtered_squares)
+[9, 16, 25, 36, 49, 64, 81]
+```
+>> Such that, equivalent results were obtained with `map()` / `filter()` and list comprehensions. Set comprehension and dictionary comprehension is shown below:
+
+```python
+s = {x for x in range(15) if x%2 == 0}
+print (s)
+{0, 2, 4, 6, 8, 10, 12, 14}
+```
+
+```python
+d = {n: n**3 for n in range(4)}
+print (d)
+{0: 0, 1: 1, 2: 8, 3: 27}
+```
 ---
 
 ### Complete the following problems by editing the files below:
@@ -56,7 +90,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 937
 
 b.  
 ```
@@ -64,7 +98,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 513
 
 c.  
 ```
@@ -72,7 +106,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> 7850
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
