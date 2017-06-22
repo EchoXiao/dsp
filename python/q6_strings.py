@@ -18,7 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        print ('Donut number count:' + str(count))
+    else:
+        print ('Donut number count: many')
 
 
 def both_ends(s):
@@ -37,7 +40,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) > 2:
+        return s[:2] + s[-2:]
+    else:
+        return ' '
 
 
 def fix_start(s):
@@ -56,7 +62,10 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    ss = s[0]
+    for i in s[1:]:
+        ss += '*' if i == s[0] else i
+    return ss
 
 
 def mix_up(a, b):
@@ -74,7 +83,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return b[:2] + a[2:] + ' ' + a[:2] + b[2:]
 
 
 def verbing(s):
@@ -91,7 +100,11 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) >= 3:
+        if s[-3:] == 'ing': ss = s + 'ly'
+        else: ss = s + 'ing'
+    else: ss = s
+    return ss  
 
 
 def not_bad(s):
@@ -111,7 +124,14 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    s_not = 'not'
+    s_bad = 'bad'
+    not_id = s.find(s_not)
+    bad_id = s.find(s_bad)
+    if bad_id > not_id:
+        return s[:not_id] + 'good'
+    else:
+        return s
 
 
 def front_back(a, b):
@@ -130,4 +150,16 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    if len(a)%2 == 0:
+        a_front = a[:int(len(a)/2)]
+        a_back = a[int(len(a)/2):]
+    if len(a)%2 != 0:
+        a_front = a[:int((len(a)/2)+1)]
+        a_back = a[(int(len(a)/2))+1:]
+    if len(b)%2 != 0:
+        b_front = b[:int((len(b)/2)+1)]
+        b_back = b[int((len(b)/2)+1):]
+    if len(b)%2 == 0:
+        b_front = b[:int(len(b)/2)]
+        b_back = b[int(len(b)/2):]
+    return a_front + b_front + a_back + b_back
