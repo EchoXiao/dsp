@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python lists are mutable, such that elements in the list can be replaced, deleted, where tuples are immutable and cannot be modified. Only immutable data types can be used as keys in dictionaries, this is because using immutable data types prevents any subsequent list modifications that could potentially affect the __hash__ method to map the associate key values pairs.
 
 ---
 
@@ -20,7 +20,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python sets are unordered collection with no duplicate values, where Python lists can have duplicates. A hash lookup is used to locate an element within sets, which is why sets are unordered and is a lot more efficient than searching within list, because List elements are located through indices. Sets also allow to do operations such as `intersection`, `union`, `difference`, and `symmetric difference`. 
 
 ---
 
@@ -28,7 +28,11 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> lambda operator or lambda function is a way to create small anonymous one-timer function. Theya re mainly used in combination with the functions `filter()`, `map()`, `sorted()`, and `reduce()`.
+>>> ```python
+sorted(['Apple', 'PEACH', 'strawberry', 'banana'], key = lambda word: word.upper())
+['Apple', 'banana', 'PEACH', 'strawberry']
+```
 
 ---
 
