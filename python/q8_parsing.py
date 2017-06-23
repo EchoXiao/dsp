@@ -4,3 +4,10 @@
 # against opponents, and had 36 goals scored against them). Write a program to read the file, 
 # then print the name of the team with the smallest difference in ‘for’ and ‘against’ goals.
 
+import pandas as pd
+import numpy as np
+
+df = pd.read_csv('football.csv')
+df['Goal Difference'] = abs(df['Goals'] - df['Goals Allowed'])
+team = df.iloc[df['Goal Difference'].argmin(),0]
+print("The team with the smallest difference in 'for' and 'against' goals is " + str(team))
